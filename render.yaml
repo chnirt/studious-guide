@@ -35,27 +35,14 @@ services:
       # These automatically populate connection details 
       # for the Render Postgres database defined below
       - key: DB_TYPE
-        # value: postgresdb
         fromEnvironment: true
       - key: DB_POSTGRESDB_DATABASE
-        # fromDatabase:
-        #   name: n8n-db
-        #   property: database
         fromEnvironment: true
       - key: DB_POSTGRESDB_HOST
-        # fromDatabase:
-        #   name: n8n-db
-        #   property: host
         fromEnvironment: true
       - key: DB_POSTGRESDB_PASSWORD
-        # fromDatabase:
-        #   name: n8n-db
-        #   property: password
         fromEnvironment: true
       - key: DB_POSTGRESDB_USER
-        # fromDatabase:
-        #   name: n8n-db
-        #   property: user
         fromEnvironment: true
 
 # databases:
