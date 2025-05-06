@@ -32,19 +32,6 @@ services:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
 
-      # These automatically populate connection details 
-      # for the Render Postgres database defined below
-      - key: DB_TYPE
-        fromEnvironment: true
-      - key: DB_POSTGRESDB_DATABASE
-        fromEnvironment: true
-      - key: DB_POSTGRESDB_HOST
-        fromEnvironment: true
-      - key: DB_POSTGRESDB_PASSWORD
-        fromEnvironment: true
-      - key: DB_POSTGRESDB_USER
-        fromEnvironment: true
-
 # databases:
 #   - name: n8n-db
 #     plan: free
