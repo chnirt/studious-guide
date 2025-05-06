@@ -32,6 +32,31 @@ services:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
 
+      # These automatically populate connection details 
+      # for the Render Postgres database defined below
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_DATABASE
+        # fromDatabase:
+        #   name: n8n-db
+        #   property: database
+        value: postgres
+      - key: DB_POSTGRESDB_HOST
+        # fromDatabase:
+        #   name: n8n-db
+        #   property: host
+        value: db.fllipfihxpofzvdxjokr.supabase.co
+      - key: DB_POSTGRESDB_PASSWORD
+        # fromDatabase:
+        #   name: n8n-db
+        #   property: password
+        value: Matkhaula1!!!
+      - key: DB_POSTGRESDB_USER
+        # fromDatabase:
+        #   name: n8n-db
+        #   property: user
+        value: postgres
+
 # databases:
 #   - name: n8n-db
 #     plan: free
